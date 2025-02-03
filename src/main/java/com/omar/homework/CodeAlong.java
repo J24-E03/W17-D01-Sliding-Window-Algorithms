@@ -29,10 +29,10 @@ public class CodeAlong {
             int mid =  left + (right - left)/2;
 
             if(nums[mid] > nums[mid -1]){
-                right = mid;
+                left = mid +1;
             }
             else{
-                left = mid + 1;
+                right = mid;
             }
         }
         return left;
